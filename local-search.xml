@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2022/05/hello-world/"/>
+    <url>/2022/05/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></div></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">$ hexo server<br></code></pre></div></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">$ hexo generate<br></code></pre></div></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></div></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>好看的blog站点推荐</title>
+    <link href="/2022/04/blog/%E5%A5%BD%E7%9C%8B%E7%9A%84blog%E7%AB%99%E7%82%B9%E6%8E%A8%E8%8D%90/"/>
+    <url>/2022/04/blog/%E5%A5%BD%E7%9C%8B%E7%9A%84blog%E7%AB%99%E7%82%B9%E6%8E%A8%E8%8D%90/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><p><a href="https://gugeshenjineng.github.io/">https://gugeshenjineng.github.io/</a></p><p><img src="/2022/04/blog/%E5%A5%BD%E7%9C%8B%E7%9A%84blog%E7%AB%99%E7%82%B9%E6%8E%A8%E8%8D%90/image-20220430161038693.png" alt="image-20220430161038693"></p><h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p><a href="https://www.yshawlon.cn/">https://www.yshawlon.cn/</a></p><p><a href="https://www.yshawlon.cn/1.html#toc-heading-18">https://www.yshawlon.cn/1.html#toc-heading-18</a></p><p><img src="/2022/04/blog/%E5%A5%BD%E7%9C%8B%E7%9A%84blog%E7%AB%99%E7%82%B9%E6%8E%A8%E8%8D%90/image-20220430161136736.png" alt="image-20220430161136736"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>normal</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hexo-Fluid博客搭建部署中的问题解决</title>
+    <link href="/2022/04/blog/Hexo-Fluid%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2%E4%B8%AD%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    <url>/2022/04/blog/Hexo-Fluid%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2%E4%B8%AD%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-Hexo-部署到-Github-Pages-然后没有CNAME问题"><a href="#1-Hexo-部署到-Github-Pages-然后没有CNAME问题" class="headerlink" title="1. Hexo 部署到 Github Pages 然后没有CNAME问题"></a>1. Hexo 部署到 Github Pages 然后没有CNAME问题</h2><p>现象：每次hexo deploy后都需要重新在<strong>根目录下</strong>添加CNAME很麻烦，通过下面的方式自动实现。</p><figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">&#123;% note success %&#125;<br><span class="hljs-bullet">1.</span> 找到 hexo 博客根目录下的 source 文件夹。注意，不是主题的 source 文件夹。<br><span class="hljs-bullet">2.</span> 新建一个文件，名为 CNAME ，内容为你的域名（不包括www.或http等等）。<br><span class="hljs-bullet">3.</span> 重新生成并部署就有了。<br><br>参考：http://www.4k8k.xyz/article/weixin<span class="hljs-emphasis">_41747528/102772937</span><br><span class="hljs-emphasis">&#123;% endnote %&#125;</span><br></code></pre></div></td></tr></table></figure><p>如图所示：</p><p><img src="/2022/04/blog/Hexo-Fluid%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E9%83%A8%E7%BD%B2%E4%B8%AD%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/image-20220430141156625.png" alt="image-20220430141156625"></p><hr><h2 id="Hexo部署出现错误-Error-Spawn-failed-解决方式"><a href="#Hexo部署出现错误-Error-Spawn-failed-解决方式" class="headerlink" title="Hexo部署出现错误 Error: Spawn failed 解决方式"></a>Hexo部署出现错误 Error: Spawn failed 解决方式</h2><figure class="highlight yml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yml"><span class="hljs-comment"># Deployment</span><br><span class="hljs-comment">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="hljs-attr">deploy:</span><br>  <span class="hljs-comment"># type: &#x27;&#x27;</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repository:</span> <span class="hljs-string">https://github.com/GWP1850062860/GWP1850062860.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></div></td></tr></table></figure><p>branch默认是master分支</p><p>参考：<a href="https://www.myosotis.xin/2021/08/25/hexo-8/">https://www.myosotis.xin/2021/08/25/hexo-8/</a></p><p><a href="https://gugeshenjineng.github.io/2021/07/02/hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/">https://gugeshenjineng.github.io/2021/07/02/hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub%E5%87%BA%E7%8E%B0%E7%9A%84%E9%97%AE%E9%A2%98/</a> （SSH KEY）</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>normal</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hexo-Fluid博客插件安装教程</title>
+    <link href="/2022/04/blog/Hexo-Fluid%E5%8D%9A%E5%AE%A2%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <url>/2022/04/blog/Hexo-Fluid%E5%8D%9A%E5%AE%A2%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<p>本文只针对自己的blog搭建，对各位看官老爷只提供参考。</p><h2 id="插件与配置："><a href="#插件与配置：" class="headerlink" title="插件与配置："></a>插件与配置：</h2><p><a href="https://hexo.fluid-dev.com/docs/">Hexo Fluid 用户手册</a></p><h2 id="网页统计"><a href="#网页统计" class="headerlink" title="网页统计"></a>网页统计</h2><p>来源：<a href="https://hexo.fluid-dev.com/docs/guide/#%E7%BD%91%E9%A1%B5%E7%BB%9F%E8%AE%A1">https://hexo.fluid-dev.com/docs/guide/#%E7%BD%91%E9%A1%B5%E7%BB%9F%E8%AE%A1</a></p><p>两种实现方式。<strong>——都试过，是OK的。</strong></p><h3 id="方式1-使用中，主题自带"><a href="#方式1-使用中，主题自带" class="headerlink" title="方式1:(使用中，主题自带)"></a>方式1:(使用中，主题自带)</h3><figure class="highlight yaml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yaml"><span class="hljs-string">主题下的_config.yml中的</span><br><span class="hljs-comment"># 网页访问统计</span><br><span class="hljs-comment"># Analysis of website visitors</span><br><br><span class="hljs-string">修改内容是：</span><br><span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">baidu:</span> <span class="hljs-string">caa9a272c8aada41250aab3ff0a4c5f2</span>  <span class="hljs-string">（需要自己去百度注册）</span><br><br><br><span class="hljs-string">=====================我的===================</span><br><span class="hljs-attr">web_analytics:</span>  <span class="hljs-comment"># 网页访问统计</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-comment"># 百度统计的 Key，值需要获取下方链接中 `hm.js?` 后边的字符串</span><br>  <span class="hljs-comment"># Baidu analytics, get the string behind `hm.js?`</span><br>  <span class="hljs-comment"># See: https://tongji.baidu.com/sc-web/10000033910/home/site/getjs?siteId=13751376</span><br>  <span class="hljs-attr">baidu:</span> <span class="hljs-string">caa9a272c8aada41250aab3ff0a4c5f2</span><br><span class="hljs-string">=====================我的===================</span><br><br></code></pre></div></td></tr></table></figure><div class="note note-success">            <p>手动检查代码的方法：<br>您可以用浏览器自带的开发者工具进行手动查看，非常便捷。<br>方法一：用Chrome 浏览器查看代码是否已安装方法：<br>①打开要检查的网页，右键点击弹出菜单中的审查元素（或直接按F12），打开开发者工具控制台。<br>②选中控制台上方的Network 按钮，按照页面提示进行操作。<br>③F5 刷新下页面，检查表格中是否有名字是hm.js？的项，若有，则证明已安装百度统计代码。若无，则证明未安装。<br>④进阶：如果有hm.js 项（或者h.js，hm.js 表示异步代码，h.js表示访问分析代码），但在百度统计里看不到网站数据（pv等），则有可能是装错了代码。需要检查是否装对代码。<br>如不一致，则证明①中所查网页没有装该网站对应的的统计代码。</p><p>参考：<a href="https://tongji.baidu.com/web/help/article?id=93&amp;type=0">https://tongji.baidu.com/web/help/article?id=93&amp;type=0</a></p>          </div><h3 id="方式2-百度标准写法"><a href="#方式2-百度标准写法" class="headerlink" title="方式2:(百度标准写法)"></a>方式2:(百度标准写法)</h3><figure class="highlight javascript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs javascript">方式一的<span class="hljs-attr">enable</span>: <span class="hljs-literal">false</span><br><br>根据百度的相关文档说明：<br><span class="hljs-attr">https</span>:<span class="hljs-comment">//tongji.baidu.com/sc-web/10000454202/home/site/getjs?siteId=17918698</span><br>知道：<br>请将代码添加到网站全部页面的&lt;/head&gt;标签前。<br><br><br>即主题下的layout/_partial/head.<span class="hljs-property">ejs</span>注入<br>=====================我的===================<br><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="language-javascript"><span class="language-xml"><span class="hljs-keyword">var</span> _hmt = _hmt || [];</span></span><br><span class="language-javascript"><span class="language-xml">(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) &#123;</span></span><br><span class="language-javascript"><span class="language-xml">  <span class="hljs-keyword">var</span> hm = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&quot;script&quot;</span>);</span></span><br><span class="language-javascript"><span class="language-xml">  hm.<span class="hljs-property">src</span> = <span class="hljs-string">&quot;https://hm.baidu.com/hm.js?caa9a272c8aada41250aab3ff0a4c5f2&quot;</span>;</span></span><br><span class="language-javascript"><span class="language-xml">  <span class="hljs-keyword">var</span> s = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementsByTagName</span>(<span class="hljs-string">&quot;script&quot;</span>)[<span class="hljs-number">0</span>]; </span></span><br><span class="language-javascript"><span class="language-xml">  s.<span class="hljs-property">parentNode</span>.<span class="hljs-title function_">insertBefore</span>(hm, s);</span></span><br><span class="language-javascript"><span class="language-xml">&#125;)();</span></span><br><span class="language-javascript"><span class="language-xml"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span><br><br>=====================我的===================<br></code></pre></div></td></tr></table></figure><h2 id="2D看板娘"><a href="#2D看板娘" class="headerlink" title="2D看板娘"></a>2D看板娘</h2><p>第一种2D看板娘：</p><a class="btn" href="https://github.com/EYHN/hexo-helper-live2d" target="_blank">hexo-helper-live2d</a><a class="btn" href="https://github.com/xiazeyu/live2d-widget-models" target="_blank">live2d-widget-models</a><p>第二种2D看板娘：（推荐）</p><a class="btn" href="https://github.com/stevenjoezhang/live2d-widget" target="_blank">live2d-widget</a><p>我最喜欢了。本来就放两个的，左边一个右边一个。后来先暂时确认一个吧。</p><p>效果如下：</p><p><img src="/2022/04/blog/Hexo-Fluid%E5%8D%9A%E5%AE%A2%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-20220430145445284.png" alt="image-20220430145445284"></p><hr><p>左边的看板娘。</p><h3 id="live2d-widget"><a href="#live2d-widget" class="headerlink" title="live2d-widget"></a>live2d-widget</h3><figure class="highlight xml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs xml">最简单的方式是：在node_modules\hexo-theme-fluid\layout\_partial\head.ejs中的<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>前插入以下的两行代码：<br><br><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>  <br>  <br></code></pre></div></td></tr></table></figure><p>如图所示：</p><p><img src="/2022/04/blog/Hexo-Fluid%E5%8D%9A%E5%AE%A2%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-20220430141044598.png" alt="image-20220430141044598"></p><p><img src="/2022/04/blog/Hexo-Fluid%E5%8D%9A%E5%AE%A2%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-20220430143706726.png" alt="image-20220430143706726"></p><hr><p>右边看板娘</p><h3 id="hexo-helper-live2d-好像挺旧的，还影响速度"><a href="#hexo-helper-live2d-好像挺旧的，还影响速度" class="headerlink" title="hexo-helper-live2d  (好像挺旧的，还影响速度)"></a>hexo-helper-live2d  (好像挺旧的，还影响速度)</h3><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell">1.安装相关环境<br>cnpm install --save hexo-helper-live2d<br>cnpm install --save hexo-helper-live2d@3.x<br></code></pre></div></td></tr></table></figure><p><img src="/2022/04/blog/Hexo-Fluid%E5%8D%9A%E5%AE%A2%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-20220430143913090.png" alt="image-20220430143913090"></p><p><a class="btn" href="https://github.com/zloirock/core-js" title>新版core-js地址</a></p><figure class="highlight gams"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs gams"><span class="hljs-number">2.</span>安装<span class="hljs-keyword">model</span><br>npm install --save live2d-widget-<span class="hljs-keyword">model</span>-xxx<br>我用到是shizuku，因此：<br>npm install --save live2d-widget-<span class="hljs-keyword">model</span>-shizuku<br><br>相关的<span class="hljs-keyword">model</span>在：live2d-widget-<span class="hljs-keyword">models</span><br></code></pre></div></td></tr></table></figure><a class="btn" href="https://github.com/xiazeyu/live2d-widget-models" target="_blank">live2d-widget-models</a><figure class="highlight yaml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yaml"><span class="hljs-number">3</span><span class="hljs-string">.配置model</span><br><span class="hljs-string">Config</span><br><span class="hljs-string">Add</span> <span class="hljs-string">configuration</span> <span class="hljs-string">in</span> <span class="hljs-string">hexo&#x27;s</span> <span class="hljs-string">_config.yml</span> <span class="hljs-string">file</span> <span class="hljs-string">or</span> <span class="hljs-string">theme&#x27;s</span> <span class="hljs-string">_config.yml.</span><br><br><span class="hljs-attr">An Example:</span><br><br><span class="hljs-attr">live2d:</span><br>  <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">scriptFrom:</span> <span class="hljs-string">local</span><br>  <span class="hljs-attr">pluginRootPath:</span> <span class="hljs-string">live2dw/</span><br>  <span class="hljs-attr">pluginJsPath:</span> <span class="hljs-string">lib/</span><br>  <span class="hljs-attr">pluginModelPath:</span> <span class="hljs-string">assets/</span><br>  <span class="hljs-attr">tagMode:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">log:</span> <span class="hljs-literal">false</span><br>  <span class="hljs-attr">model:</span><br>    <span class="hljs-attr">use:</span> <span class="hljs-string">live2d-widget-model-wanko</span><br>  <span class="hljs-attr">display:</span><br>    <span class="hljs-attr">position:</span> <span class="hljs-string">right</span><br>    <span class="hljs-attr">width:</span> <span class="hljs-number">150</span><br>    <span class="hljs-attr">height:</span> <span class="hljs-number">300</span><br>  <span class="hljs-attr">mobile:</span><br>    <span class="hljs-attr">show:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">react:</span><br>    <span class="hljs-attr">opacity:</span> <span class="hljs-number">0.7</span><br></code></pre></div></td></tr></table></figure><hr><p>dd</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>blog</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>blog</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>单片机系列</title>
+    <link href="/2022/04/%E5%8D%95%E7%89%87%E6%9C%BA%E7%B3%BB%E5%88%97/%E5%8D%95%E7%89%87%E6%9C%BA%E7%B3%BB%E5%88%97%E7%B4%A2%E5%BC%95/"/>
+    <url>/2022/04/%E5%8D%95%E7%89%87%E6%9C%BA%E7%B3%BB%E5%88%97/%E5%8D%95%E7%89%87%E6%9C%BA%E7%B3%BB%E5%88%97%E7%B4%A2%E5%BC%95/</url>
+    
+    <content type="html"><![CDATA[<p>这里是我的单片机系列项目。欢迎交流！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Indexes</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>爬虫系列索引</title>
+    <link href="/2022/04/%E7%88%AC%E8%99%AB%E7%B3%BB%E5%88%97/%E7%88%AC%E8%99%AB%E7%B3%BB%E5%88%97%E7%B4%A2%E5%BC%95/"/>
+    <url>/2022/04/%E7%88%AC%E8%99%AB%E7%B3%BB%E5%88%97/%E7%88%AC%E8%99%AB%E7%B3%BB%E5%88%97%E7%B4%A2%E5%BC%95/</url>
+    
+    <content type="html"><![CDATA[<p>这里是我的爬虫系列项目。欢迎交流！</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Indexes</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>C语言使用指南索引</title>
+    <link href="/2022/04/C/C%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E7%B4%A2%E5%BC%95/"/>
+    <url>/2022/04/C/C%E8%AF%AD%E8%A8%80%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E7%B4%A2%E5%BC%95/</url>
+    
+    <content type="html"><![CDATA[<p>这里是自己的C语言学习记录，都是精华！</p><h2 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h2><a href="/2022/04/C/C%E8%AF%AD%E8%A8%80%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E4%BD%BF%E7%94%A8/" title="C语言字符串的使用">C语言字符串的使用</a>]]></content>
+    
+    
+    <categories>
+      
+      <category>Indexes</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>算法使用指南索引</title>
+    <link href="/2022/04/algorithm/%E7%AE%97%E6%B3%95%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E7%B4%A2%E5%BC%95/"/>
+    <url>/2022/04/algorithm/%E7%AE%97%E6%B3%95%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E7%B4%A2%E5%BC%95/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>Indexes</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>shell脚本使用指南索引</title>
+    <link href="/2022/04/shell/shell%E8%84%9A%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E7%B4%A2%E5%BC%95/"/>
+    <url>/2022/04/shell/shell%E8%84%9A%E6%9C%AC%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E7%B4%A2%E5%BC%95/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>Indexes</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Python使用指南索引</title>
+    <link href="/2022/04/Python/Python%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E7%B4%A2%E5%BC%95/"/>
+    <url>/2022/04/Python/Python%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E7%B4%A2%E5%BC%95/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>Indexes</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>C++使用指南索引</title>
+    <link href="/2022/04/C++/C++%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E7%B4%A2%E5%BC%95/"/>
+    <url>/2022/04/C++/C++%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%E7%B4%A2%E5%BC%95/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>Indexes</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>C语言字符串的使用</title>
+    <link href="/2022/04/C/C%E8%AF%AD%E8%A8%80%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <url>/2022/04/C/C%E8%AF%AD%E8%A8%80%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Blog搭建快速搭建-1</title>
+    <link href="/2022/04/Blog%E6%90%AD%E5%BB%BA%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA-1/"/>
+    <url>/2022/04/Blog%E6%90%AD%E5%BB%BA%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA-1/</url>
+    
+    <content type="html"><![CDATA[<p>已安装git，nodejs。</p><figure class="highlight mipsasm"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs mipsasm">创建<span class="hljs-keyword">blog目录</span><br><span class="hljs-keyword"></span>mkdir <span class="hljs-keyword">bluemaple</span><br><span class="hljs-keyword"></span><br>初始化hexo<br>hexo init <span class="hljs-keyword">bluemaple/</span><br><span class="hljs-keyword"></span>cd <span class="hljs-keyword">bluemaple/</span><br><span class="hljs-keyword"></span>npm <span class="hljs-keyword">install</span><br><span class="hljs-keyword"></span><br>测试hexo<br>hexo server<br><br></code></pre></div></td></tr></table></figure><figure class="highlight yaml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yaml"><span class="hljs-string">更换主题Fluid</span><br><span class="hljs-string">https://github.com/fluid-dev/hexo-theme-fluid</span><br><br><span class="hljs-string">npm</span> <span class="hljs-string">install</span> <span class="hljs-string">--save</span> <span class="hljs-string">hexo-theme-fluid</span><br><br><span class="hljs-number">1</span><span class="hljs-string">.指定主题</span><br><span class="hljs-string">如下修改</span> <span class="hljs-string">Hexo</span> <span class="hljs-string">博客目录中的</span> <span class="hljs-string">_config.yml：</span><br><span class="hljs-string">=====备份======</span><br><span class="hljs-string">cp</span> <span class="hljs-string">_config.yml</span> <span class="hljs-string">_config.yml.bak</span><br><span class="hljs-string">===============</span><br><span class="hljs-attr">theme:</span> <span class="hljs-string">fluid</span>  <span class="hljs-comment"># 指定主题</span><br><span class="hljs-attr">language:</span> <span class="hljs-string">zh-CN</span>  <span class="hljs-comment"># 指定语言，会影响主题显示的语言，按需修改</span><br><span class="hljs-string">================</span><br><span class="hljs-string">cp</span> <span class="hljs-string">_config.yml</span> <span class="hljs-string">_config.fluid.yml</span><br><br><span class="hljs-number">2</span><span class="hljs-string">.创建「关于页」</span><br><span class="hljs-string">首次使用主题的「关于页」需要手动创建：</span><br><br><span class="hljs-string">hexo</span> <span class="hljs-string">new</span> <span class="hljs-string">page</span> <span class="hljs-string">about</span><br><span class="hljs-string">创建成功后，编辑博客目录下</span> <span class="hljs-string">/source/about/index.md，添加</span> <span class="hljs-string">layout</span> <span class="hljs-string">属性。</span><br><br><span class="hljs-string">修改后的文件示例如下：</span><br><br><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">about</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020-02-23 19:20:33</span><br><span class="hljs-attr">layout:</span> <span class="hljs-string">about</span><br><span class="hljs-meta">---</span><br><span class="hljs-meta"></span><br><span class="hljs-string">这里写关于页的正文，支持</span> <span class="hljs-string">Markdown,</span> <span class="hljs-string">HTML</span><br><br><br><span class="hljs-string">🆗，基本完成了搭建，后面是细节修改。</span><br></code></pre></div></td></tr></table></figure><p>看板娘问题</p><p>参考：<a href="https://github.com/stevenjoezhang/live2d-widget">https://github.com/stevenjoezhang/live2d-widget</a></p><p>​同时对<a href="https://zhangshuqiao.org/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">https://zhangshuqiao.org/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</a>    和</p><p>​<a href="https://www.yshawlon.cn/categories/Blog/">https://www.yshawlon.cn/categories/Blog/</a>    进行F12观察得出。</p><p>添加下面两行代码到主题Fluid下的layout&#x2F;_partial&#x2F;head.ejs中</p><figure class="highlight routeros"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs routeros">&lt;link <span class="hljs-attribute">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attribute">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css&quot;</span>&gt;<br>&lt;script <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js&quot;</span>&gt;&lt;/script&gt;<br><br></code></pre></div></td></tr></table></figure><p>效果如下：</p><p><img src="/2022/04/Blog%E6%90%AD%E5%BB%BA%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA-1/image-20220425220112946.png" alt="image-20220425220112946"></p><p>对的，没有报错安装时候。</p><p>如果是使用</p><p><img src="/2022/04/Blog%E6%90%AD%E5%BB%BA%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA-1/image-20220425220218041.png" alt="image-20220425220218041"></p><h1 id="怎样将域名绑定到github-pages-博客上"><a href="#怎样将域名绑定到github-pages-博客上" class="headerlink" title="怎样将域名绑定到github pages 博客上"></a>怎样将域名绑定到github pages 博客上</h1><p><a href="https://jingyan.baidu.com/article/3c343ff70fb6e60d3779632f.html">https://jingyan.baidu.com/article/3c343ff70fb6e60d3779632f.html</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>blog</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>blog</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>testcode</title>
+    <link href="/2022/04/testcode/"/>
+    <url>/2022/04/testcode/</url>
+    
+    <content type="html"><![CDATA[<figure class="highlight cpp"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-type">int</span> argc, <span class="hljs-type">char</span> *argv[])</span> </span>&#123;<br><br>  <span class="hljs-comment">/* An annoying &quot;Hello World&quot; example */</span><br>  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">auto</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">0xFFFF</span>; i++)<br>    cout &lt;&lt; <span class="hljs-string">&quot;Hello, World!&quot;</span> &lt;&lt; endl;<br><br>  <span class="hljs-type">char</span> c = <span class="hljs-string">&#x27;\n&#x27;</span>;<br>  unordered_map &lt;string, vector&lt;string&gt; &gt; m;<br>  m[<span class="hljs-string">&quot;key&quot;</span>] = <span class="hljs-string">&quot;\\\\&quot;</span>; <span class="hljs-comment">// this is an error</span><br><br>  <span class="hljs-keyword">return</span> <span class="hljs-number">-2e3</span> + <span class="hljs-number">12l</span>;<br>&#125;<br></code></pre></div></td></tr></table></figure><a class="btn" href="http://www.baidu.com" title="title" target="_blank">百度</a><div class="note note-primary">            <p>文字 或者 <code>markdown</code> 均可</p>          </div><div class="note note-success">            <p>文字 或者 <code>markdown</code> 均可</p>          </div><div class="note note-success">            <p>文字 或者 <code>markdown</code> 均可</p>          </div><span class="label label-primary">text</span><p><span class="label label-primary">Label</span></p>            <input type="checkbox" disabled checked="checked">text          ]]></content>
+    
+    
+    <categories>
+      
+      <category>test</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>test</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
